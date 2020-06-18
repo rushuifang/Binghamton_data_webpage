@@ -1,0 +1,627 @@
+.head {
+    background-image: url("pictures/nature-preserve-fall.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head-text {
+    text-align: center;
+}
+
+.head-text > h1 {
+    font-size: 3.5vw;
+    font-family: "Franklin Gothic Medium";
+    color: #daf4ed;
+}
+
+.head-text > p {
+    font-size: 1.5vw;
+    font-family: "Franklin Gothic Medium";
+    color: #daf4ed;
+}
+
+.head-profile {
+    width: 80vw;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 3vh auto;
+}
+
+.stat {
+    background-color: none;
+}
+
+.stat-title > p {
+    font-family: Trebuchet MS;
+    font-size: 0.8vw;
+    color: #f3f9fb;
+    margin: 0;
+}
+
+.stat-value > p {
+    font-family: Charcoal;
+    font-size: 1.6vw;
+    color: #f5fefb;
+}
+
+#head-nav {
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.sticky {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.sticky + .about {
+    padding-top: 60vh;
+}
+
+.nav-svg {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 2vw;
+    padding: 0 0.8vw;
+}
+
+.nav-svg:hover {
+    background-color: #d1bdbc;
+    border: outset #b02920;
+}
+
+.svg-logo {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 auto;
+}
+
+.nav-text {
+    text-align: center;
+    color: #f2fae1;
+    font-size: 0.55vw;
+    font-family: "Times New Roman";
+    margin: 0 auto;
+}
+
+.nav-text:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#about {
+    background-image: url("pictures/background-about.jpg");
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-svg {
+    width: 22vw;
+}
+
+.nys-svg {
+    width: 20vw;
+    height: 30vh;
+}
+
+.about-text {
+    width: 65vw;
+    margin: 1vh 1vw;
+}
+
+.about-text1 > h2 {
+    font-size: 1.2vw;
+    font-family: cursive;
+}
+
+.about-text2 {
+    color: #590f52;
+    column-count: 3;
+    column-gap: 2vw;
+    font-size: 1.15vw;
+    margin: 0 auto;
+    font-family: "Times New Roman";
+    text-align: justify;
+}
+
+#source {
+    font-size: 1vw;
+}
+
+#health,
+#commute,
+#economy {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#diversity,
+#housing {
+    background-image: url("pictures/paper-texture.png");
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-chart-section {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 90vw;
+    justify-content: center;
+}
+
+.text-section {
+    width: 20vw;
+    height: 45vh;
+    margin: 2vh 0vw 2vh 2vw;
+}
+
+.text1 > h2 {
+    font-size: 1.2vw;
+    font-family: cursive;
+}
+
+.text2 {
+    color: #590f52;
+    font-size: 1.15vw;
+    font-family: "Times New Roman";
+    text-align: justify;
+}
+
+#text-health1,
+#text-health2,
+#text-diversity1,
+#text-diversity2,
+#text-commute1,
+#text-commute2,
+#text-commute3,
+#text-housing,
+#text-economy1,
+#text-economy2 {
+    visibility: hidden;
+}
+
+.enter-animation {
+    animation-name: slide;
+    animation-duration: 2s;
+    visibility: visible !important;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.chart-section {
+    width: 70vw;
+    height: 45vh;
+    background-image: url("pictures/chart_background.jpeg");
+    background-size: cover;
+    margin: 2vh 2vw 2vh 2vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#commute {
+    justify-content: space-around;
+}
+
+.commute-subdiv {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.commute-text {
+    height: 28vh;
+    width: 25vw;
+    color: #590f52;
+    font-size: 1.15vw;
+    font-family: "Times New Roman";
+    text-align: justify;
+    margin: 2vh;
+}
+
+.commute-text > h2 {
+    font-size: 1.2vw;
+    color: black !important;
+    font-family: cursive;
+}
+
+.commute-picture {
+    height: 28vh;
+    width: 25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid pink;
+}
+
+.commute-picture:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.commute-map:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.commute-pic1 {
+    background-image: url("pictures/Bing_airport.jpg");
+}
+
+.commute-pic2 {
+    background-image: url("pictures/Bing_greyhound.jpg");
+}
+
+.commute-pic3 {
+    background-image: url("pictures/BingU.jpg");
+}
+
+.commute-map {
+    height: 28vh;
+    width: 25vw;
+}
+
+.housing-row {
+    width: 90vw;
+    height: 32vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.housing-text {
+    width: 40vw;
+    margin: 2vh auto;
+}
+
+.housing-text > h2 {
+    font-family: cursive;
+    font-size: 1.2vw;
+}
+
+.housing-text > p {
+    color: #590f52;
+    font-size: 1.15vw;
+    font-family: "Times New Roman";
+    text-align: justify;
+}
+
+.housing-bars {
+    height: 30vh;
+    width: 40vw;
+    margin: 2vh auto;
+    background-image: url("pictures/chart_background.jpeg");
+    background-size: cover;
+}
+
+.economy-table {
+    height: 38vh;
+    width: 52vw;
+    border: 0.1vh solid black;
+    margin: 2vh auto;
+}
+
+tr {
+    border: 0.1vh solid black;
+}
+
+th,
+td {
+    padding: 1vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead {
+    font-family: "Times New Roman";
+    font-size: 1.8vh;
+    color: white;
+    background-color: slateblue;
+}
+
+.table-column {
+    font-family: Calibri;
+    font-size: 1.8vh;
+    color: #281663;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 0.1vw #aaa;
+}
+
+tbody:hover tr:hover td {
+    color: #444;
+}
+
+.economy-row {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+}
+
+.economy-texts {
+    width: 30vw;
+    margin: 2vw;
+    color: #590f52;
+    font-size: 1.15vw;
+    font-family: "Times New Roman";
+    text-align: justify;
+}
+
+.economy-charts {
+    width: 60vw;
+    height: 45vh;
+    margin: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url("pictures/chart_background.jpeg");
+    background-size: cover;
+}
+
+.economy-text-source {
+    width: 55vw;
+    font-family: fantasy;
+    font-size: 1vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cities-profile {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    justify-content: space-around;
+    background-image: url("pictures/background-about.jpg");
+}
+
+.cities-profile-row {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 25vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#ithaca-pic {
+    background-image: url("pictures/ithaca.jpg");
+}
+
+#syracuse-pic {
+    background-image: url("pictures/syracuse.jpg");
+}
+
+#buffalo-pic {
+    background-image: url("pictures/buffalo.jpg");
+}
+
+#rochester-pic {
+    background-image: url("pictures/rochester.jpg");
+}
+
+#boston-pic {
+    background-image: url("pictures/boston.jpg");
+}
+
+#sanfran-pic {
+    background-image: url("pictures/sanfran.jpg");
+}
+
+.cities-profile-container {
+    height: 20vh;
+    width: 22vw;
+    border: grey solid;
+    margin: 1vh auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.cities-profile-container:hover {
+    border: red solid !important;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.cities-profile-container2 {
+    width: 47vw !important;
+}
+
+.cities-profile-title {
+    font-size: 3vh;
+    font-family: Times;
+    color: white;
+    position: relative;
+    top: 40%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 20vh;
+    justify-content: space-around;
+    background-color: #faa005;
+}
+
+.profile-picture {
+    width: 15vh;
+    height: 15vh;
+    margin: 1vh 1vh 0 1vh;
+    border: solid lightblue;
+    background-size: cover;
+    background-image: url("pictures/pikachu.gif");
+}
+
+.profile-picture:hover {
+    background-image: url("pictures/rushui.jpeg");
+    z-index: 10;
+}
+
+.profile-about {
+    width: 40vw;
+    margin: 1vh;
+}
+
+.flex-center {
+    width: 100%;
+    min-height: 6vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: -1vh;
+}
+
+.icon-3d {
+    padding: 10px;
+    -webkit-animation: icon3d 200ms 10;
+    animation: icon3d 200ms 10;
+    color: #fff;
+}
+
+.icon-3d:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+    0% {
+        text-shadow: 5px 4px rgba(244, 67, 54, 1),
+            -5px -6px rgba(33, 150, 243, 1);
+    }
+    25% {
+        text-shadow: -5px -6px rgba(244, 67, 54, 1),
+            5px 4px rgba(33, 150, 243, 1);
+    }
+    50% {
+        text-shadow: 5px -4px rgba(244, 67, 54, 1),
+            -8px 4px rgba(33, 150, 243, 1);
+    }
+    75% {
+        text-shadow: -8px -4px rgba(244, 67, 54, 1),
+            -5px -4px rgba(33, 150, 243, 1);
+    }
+    100% {
+        text-shadow: -5px 0 rgba(244, 67, 54, 1), 5px -4px rgba(33, 150, 243, 1);
+    }
+}
+
+.profile-quote {
+    width: 30vw;
+    margin: 1vh;
+}
+
+blockquote {
+    font-size: 2vh;
+    font-family: monospace;
+    background: #f9f9f9;
+    color: blue;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Data Analyze at Binghamton</title>
+        <link rel="icon" href="pictures/bingIcon.png" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="dataAnalyseStyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="canvasjs.min.js"></script>
+        <script src="chartsData.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <div class="head-text">
+                <h1>BINGHAMTON</h1>
+                <p>A beautiful city in upstate New York</p>
+            </div>
+            <div class="head-profile">
+                <div class="stat">
+                    <div class="stat-title"><p>POPULATION</p></div>
+                    <div class="stat-value"><p>47K</p></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title"><p>LAND</p></div>
+                    <div class="stat-value">
+                        <p>27.2km<sup>2</sup></p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title"><p>SETTLED YEAR</p></div>
+                    <div class="stat-value"><p>1802</p></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title"><p>INCOME PER CAPITA</p></div>
+                    <div class="stat-value"><p>$20,576</p></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title"><p>MARRIAGE RATE</p></div>
+                    <div class="stat-value"><p>30.3%</p></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title"><p>POVETY RATE</p></div>
+                    <div class="stat-value"><p>33.3%</p></div>
+                </div>
+            </div>
+            <div id="head-nav">
+                <div class="nav-svg">
+                    <a href="#about">
+                        <img class="svg-logo" src="svg/about.svg" />
+                        <div class="nav-text">ABOUT</div>
+                    </a>
+                </div>
+                <div class="nav-svg">
+                    <a href="#health">
+                        <img class="svg-logo" src="svg/health.svg" />
+                        <div class="nav-text">HEALTH</div>
+                    </a>
+                </div>
+                <div class="nav-svg">
+                    <a href="#diversity">
+                        <img class="svg-logo" src="svg/diversity.svg" />
+                        <div class="nav-text">DIVERSITY</div>
+                    </a>
+                </div>
+                <div class="nav-svg">
+                    <a href="#commute">
+                        <img class="svg-logo" src="svg/commute.svg" />
+                        <div class="nav-text">COMMUTE</div>
+                    </a>
+                </div>
+                <div class="nav-svg">
+                    <a href="#housing">
+                        <img class="svg-logo" src="svg/housing.svg" />
+                        <div class="nav-text">HOUSING</div>
+                    </a>
+                </div>
+                <div class="nav-svg">
+                    <a href="#economy">
+                        <img class="svg-logo" src="svg/economy.svg" />
+                        <div class="nav-text">ECONOMY</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="about-svg">
+                <img src="svg/nys-counties.svg" class="nys-svg" />
+            </div>
+            <div class="about-text">
+                <div class="about-text1"><h2>ABOUT</h2></div>
+                <div class="about-text2">
+                    <p>
+                        Binghamton /ˈbɪŋəmtən/ is a city in, and the county seat
+                        of, Broome County, New York, United States. It lies in
+                        the state's Southern Tier region near the Pennsylvania
+                        border, in a bowl-shaped valley at the confluence of the
+                        Susquehanna and Chenango Rivers. Binghamton is the
+                        principal city and cultural center of the Binghamton
+                        metropolitan area (also known as Greater Binghamton, or
+                        historically the Triple Cities), home to a quarter
+                        million people. The population of the city itself,
+                        according to the 2010 census, is 47,376.
+                    </p>
+                    <p>
+                        From the days of the railroad, Binghamton was a
+                        transportation crossroads and a manufacturing center,
+                        and has been known at different times for the production
+                        of cigars, shoes, and computers. IBM was founded nearby,
+                        and the flight simulator was invented in the city,
+                        leading to a notable concentration of electronics- and
+                        defense-oriented firms. This sustained economic
+                        prosperity earned Binghamton the moniker of the Valley
+                        of Opportunity. However, following cuts made by defense
+                        firms after the end of the Cold War, the region has lost
+                        a significant portion of its manufacturing industry.
+                    </p>
+                    <p>
+                        Today, while there is a continued concentration of
+                        high-tech firms, Binghamton is emerging as a healthcare-
+                        and education-focused city, with the presence of
+                        Binghamton University acting as much of the driving
+                        force behind this revitalization.
+                    </p>
+                    <p id="source">
+                        Cover photo:
+                        <i>Nature preserve in Binghamton University</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="health">
+            <div class="text-chart-section">
+                <div id="text-health1" class="text-section">
+                    <div class="text1"><h2>POPULATION</h2></div>
+                    <div class="text2">
+                        <p>
+                            Until the mid-1950s, Binghamton saw its population
+                            grow rapidly due to its industrial boom, and was one
+                            of the largest 100 cities in the United States
+                            between 1890 and 1910. Since 1950, the city has
+                            experienced sustained population loss, some of which
+                            was the result of suburbanization. Much of the
+                            recent population loss is skewed towards the younger
+                            population, resulting in the growth of the relative
+                            proportion of the elderly. (Source:
+                            <a
+                                href="https://worldpopulationreview.com/us-cities/binghamton-university-ny-population/"
+                            >
+                                World Population Review</a
+                            >)
+                        </p>
+                    </div>
+                </div>
+                <div class="chart-section">
+                    <div
+                        id="nys-population-chart"
+                        style="height: 40vh; width: 65vw; margin: 0 auto;"
+                    ></div>
+                </div>
+            </div>
+            <div class="text-chart-section">
+                <div id="text-health2" class="text-section">
+                    <div class="text1"><h2>HEALTH CARE</h2></div>
+                    <div class="text2">
+                        <p>
+                            United Health Services (UHS) operates Binghamton
+                            General Hospital in the Southside and Wilson Medical
+                            Center in Johnson City, while Lourdes Hospital is
+                            sponsored by the Daughters of Charity of Saint
+                            Vincent de Paul. The bar chart on the right shows
+                            hospital beds supply vesus popluation. (Source:
+                            <a
+                                href="https://bao.arcgis.com/covid-19/jhu/county/36007.html"
+                                >Johns Hopkins University</a
+                            >)
+                        </p>
+                    </div>
+                </div>
+                <div class="chart-section">
+                    <div
+                        id="health-bar1"
+                        style="height: 40vh; width: 30vw; margin: 0 auto;"
+                    ></div>
+                    <div
+                        id="health-bar2"
+                        style="height: 40vh; width: 30vw; margin: 0 auto;"
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <div id="diversity">
+            <div class="text-chart-section">
+                <div id="text-diversity1" class="text-section">
+                    <div class="text1">
+                        <h2>DIVERSITY</h2>
+                    </div>
+                    <div class="text2">
+                        <p>
+                            Binghamton is home to an ethnically diverse
+                            population. During its industrial heyday, thousands
+                            of European immigrants moved to the city as they
+                            found an abundance of jobs and working-class
+                            prosperity. Due to its diversity, there are many
+                            religious denominations found within the region. Pie
+                            chart on the right shows the racial makeup of
+                            Binghamton city. (Source:
+                            <a
+                                href="https://worldpopulationreview.com/us-cities/binghamton-ny-population/"
+                                >World Population Review.</a
+                            >)
+                        </p>
+                    </div>
+                </div>
+                <div class="chart-section">
+                    <div
+                        id="bing-ethnicity-pie"
+                        style="height: 40vh; width: 65vw; margin: 0 auto;"
+                    ></div>
+                </div>
+            </div>
+            <div class="text-chart-section">
+                <div id="text-diversity2" class="text-section">
+                    <div class="text2">
+                        <p>
+                            As of 2018, there are 14,021 undergraduate students
+                            and 3,747 graduate students enrolled at Binghamton
+                            University, with 768 full-time faculty and a
+                            student-to-faculty of 20:1. 84% of undergraduate
+                            students at Binghamton are residents of New York
+                            state, with more than 60 percent from the greater
+                            New York City area and the remainder from all
+                            corners of the state. (Source:
+                            <a
+                                href="https://en.wikipedia.org/wiki/Binghamton_University"
+                                >Wikipedia</a
+                            >
+                            &
+                            <a
+                                href="https://worldpopulationreview.com/us-cities/binghamton-university-ny-population/"
+                                >World Population Review.</a
+                            >)
+                        </p>
+                    </div>
+                </div>
+                <div class="chart-section">
+                    <div
+                        id="bu-ethnicity-pie"
+                        style="height: 40vh; width: 65vw; margin: 0 auto;"
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <div id="commute">
+            <div class="commute-subdiv">
+                <div id="text-commute1" class="commute-text">
+                    <h2>COMMUTE</h2>
+                    <p>
+                        <strong>Greater Binghamton Airport</strong> (BGM) is a
+                        county-owned American airport eight miles north of
+                        Binghamton, New York. It is in East Maine and serves the
+                        Southern Tier of New York. BGM offers daily, commercial,
+                        non-stop flights on Delta Airlines. Greater Binghamton
+                        Airport is owned by Broome County and operated by the
+                        Department of Aviation.
+                    </p>
+                </div>
+                <div class="commute-picture commute-pic1"></div>
+                <div class="commute-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.271061836147!2d-75.98359164865363!3d42.20865097909526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89daf165b92a0803%3A0xc987da113f75e51a!2sGreater%20Binghamton%20Airport!5e0!3m2!1sen!2sus!4v1591832568695!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border: 0.2vw solid purple;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="commute-subdiv">
+                <div id="text-commute2" class="commute-text">
+                    <p>
+                        <strong
+                            >Greater Binghamton Transportation Center</strong
+                        >
+                        is your one-stop station for local, regional, and
+                        interstate bus travel. The facility offers a safe, clean
+                        environment with a large indoor seating area and a host
+                        of amenities. Several restaurants and retailers are
+                        within walking distance. The Broome County Department of
+                        Public Transportation has its primary transfer point
+                        located at the facility for access to more places in the
+                        Greater Binghamton area.
+                    </p>
+                </div>
+                <div class="commute-picture commute-pic2"></div>
+                <div class="commute-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.293294890649!2d-75.91241104865644!3d42.10118897910304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89daef7a8bdee329%3A0xbeff4201120b2491!2sGreater%20Binghamton%20Transportation%20Center!5e0!3m2!1sen!2sus!4v1591833571966!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border: 0.2vw solid purple;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="commute-subdiv">
+                <div id="text-commute3" class="commute-text">
+                    <p>
+                        <strong>Off Campus College Transport</strong> (OCCT) is
+                        the student run transportation service for Binghamton
+                        University students, faculty and staff. OCCT offers
+                        safe, reliable, convenient, consistent and courteous
+                        transportation around the Binghamton University
+                        community. Each OCCT bus and shuttle is equipped with a
+                        real-time bus tracking device that allows riders to see
+                        when and where they will be at any location.
+                    </p>
+                </div>
+                <div class="commute-picture commute-pic3"></div>
+                <div class="commute-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.917198656221!2d-75.96911024865682!3d42.087823579104096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89daeec7c8ee57d1%3A0x1caffc19b3f62f53!2sUniversity%20Union%2C%20Vestal%2C%20NY%2013850!5e0!3m2!1sen!2sus!4v1591834220473!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border: 0.2vw solid purple;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="housing">
+            <div class="housing-row">
+                <div id="text-housing" class="housing-text">
+                    <h2>HOUSING</h2>
+                    <p>
+                        Household size has decreased since the 1990s, consistent
+                        with national trends. The average household size in
+                        Binghamton was 2.18 persons in 2010, compared with a
+                        national average of 2.59. More than 70 percent of the
+                        City’s households had one or two people, which indicates
+                        greater demand for smaller housing units. Conversely,
+                        Broome County and the MSA had higher percentages of
+                        larger families which, in turn, indicates greater demand
+                        for threebedroom or larger residential units in those
+                        areas not located in the City. (Source:
+                        <a
+                            href="https://www.neighborhoodscout.com/ny/binghamton/real-estate"
+                            >Neighborhood Scout.</a
+                        >)
+                    </p>
+                </div>
+                <div class="housing-bars">
+                    <div
+                        id="housing-bar-1"
+                        style="height: 26vh; width: 38vw; margin: 2vh auto;"
+                    ></div>
+                </div>
+            </div>
+            <div class="housing-row">
+                <div class="housing-bars">
+                    <div
+                        id="housing-bar-2"
+                        style="height: 26vh; width: 38vw; margin: 2vh auto;"
+                    ></div>
+                </div>
+                <div class="housing-bars">
+                    <div
+                        id="housing-bar-3"
+                        style="height: 26vh; width: 38vw; margin: 2vh auto;"
+                    ></div>
+                </div>
+            </div>
+            <div class="housing-row">
+                <div class="housing-bars">
+                    <div
+                        id="housing-bar-5"
+                        style="height: 26vh; width: 38vw; margin: 2vh auto;"
+                    ></div>
+                </div>
+                <div class="housing-bars">
+                    <div
+                        id="housing-bar-4"
+                        style="height: 26vh; width: 38vw; margin: 2vh auto;"
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <div id="economy">
+            <div class="economy-row">
+                <div id="text-economy1" class="economy-texts">
+                    <h2 style="font-family: cursive; font-size: 1.2vw;">
+                        ECONOMY
+                    </h2>
+                    <p>
+                        Here at Binghamton, as manufacturing has waned and the
+                        economy has begun to restructure, the
+                        education-and-health and leisure-and-hospitality sectors
+                        have become increasingly important. Binghamton
+                        University has become the region’s economic centerpiece
+                        and has helped stabilize an otherwise struggling area.
+                        Table on the right compares some economy factors in
+                        Binghamton with those in other regions.
+                    </p>
+                </div>
+                <div class="economy-charts">
+                    <table class="economy-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>BINGHAMTON</th>
+                                <th>ITHACA</th>
+                                <th>ELMIRA</th>
+                                <th>NEW YORK</th>
+                                <th>USA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-column">Population</td>
+                                <td>240,000</td>
+                                <td>103,000</td>
+                                <td>84,000</td>
+                                <td>19,542,000</td>
+                                <td>327,167,000</td>
+                            </tr>
+                            <tr>
+                                <td class="table-column">
+                                    Population growth, 10-year change
+                                </td>
+                                <td>-4.9%</td>
+                                <td>2.4%</td>
+                                <td>-4.8%</td>
+                                <td>1.7%</td>
+                                <td>7.6%</td>
+                            </tr>
+                            <tr>
+                                <td class="table-column">GDP, billions</td>
+                                <td>$10</td>
+                                <td>$5</td>
+                                <td>$3</td>
+                                <td>$1,598</td>
+                                <td>$19,485</td>
+                            </tr>
+                            <tr>
+                                <td class="table-column">
+                                    Job growth, 5-year change
+                                </td>
+                                <td>-1.5%</td>
+                                <td>3.9%</td>
+                                <td>-3.5%</td>
+                                <td>8.0%</td>
+                                <td>9.3%</td>
+                            </tr>
+                            <tr>
+                                <td class="table-column">
+                                    Median household income
+                                </td>
+                                <td>$50,000</td>
+                                <td>$57,000</td>
+                                <td>$50,000</td>
+                                <td>$64,000</td>
+                                <td>$60,000</td>
+                            </tr>
+                            <tr>
+                                <td class="table-column">Median home price</td>
+                                <td>$109,000</td>
+                                <td>$200,000</td>
+                                <td>$100,000</td>
+                                <td>$300,000</td>
+                                <td>$200,000</td>
+                            </tr>
+                            <tr>
+                                <td class="table-column">
+                                    Population 25yr+ with BA+
+                                </td>
+                                <td>26.8%</td>
+                                <td>52.2%</td>
+                                <td>23.9%</td>
+                                <td>36.0%</td>
+                                <td>32.0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="economy-text-source">
+                        <p>
+                            Sources:
+                            <a
+                                href="https://www.newyorkfed.org/regional-economy/profiles/binghampton"
+                                >Federal Reserve Bank of New York.</a
+                            >
+                            (Data retrieved through American FactFinder, Moody's
+                            Economy.com)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="economy-row">
+                <div id="text-economy2" class="economy-texts">
+                    <p>
+                        According to the NY State Department of Labor, the
+                        Southern Tier’s economy continues to bounce back from
+                        the worst economic downturn in 75 years. Over the 6-year
+                        period ending 2016, the region's private sector job
+                        count climbed by 5,200, or 2.2% to 237,200. Moreover the
+                        region's growing job count has helped to push down the
+                        region's unemployment rate from 7.8% in September 2010
+                        to 4.9% in September 2016. Chart on the right presents
+                        change of GDP per capita at Binghamton over past the few
+                        years.
+                    </p>
+                </div>
+                <div class="economy-charts">
+                    <div
+                        id="economy-spline"
+                        style="height: 38vh; width: 52vw; margin: auto;"
+                    ></div>
+                    <div class="economy-text-source">
+                        <p>
+                            Sources:
+                            <a
+                                href="https://www.opendatanetwork.com/entity/310M200US13780/Binghamton_Metro_Area_NY/economy.gdp.per_capita_gdp?year=2017"
+                            >
+                                Open Data Network.</a
+                            >
+                            (Data collected for the whole Binghamton metro
+                            area.)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="footer">
+            <div class="cities-profile">
+                <div>
+                    <h3
+                        style="
+                            text-align: center;
+                            color: rgba(7, 59, 55, 0.74);
+                            font-weight: bold;
+                            font-family: fantasy;
+                            font-size: 3vh;
+                        "
+                    >
+                        Keep Exploring
+                    </h3>
+                </div>
+                <div class="cities-profile-row">
+                    <a
+                        href="#ithaca-pic"
+                        class="cities-profile-container"
+                        id="ithaca-pic"
+                        onclick="ithacaFunc()"
+                    >
+                        <div class="cities-profile-title">ITHACA</div>
+                    </a>
+                    <a
+                        href="#syracuse-pic"
+                        class="cities-profile-container"
+                        id="syracuse-pic"
+                        onclick="syracuseFunc()"
+                    >
+                        <div class="cities-profile-title">SYRACUSE</div>
+                    </a>
+                    <a
+                        href="https://www.visitbuffaloniagara.com/business-type/guided-tours-guided-tours/"
+                        class="cities-profile-container"
+                        id="buffalo-pic"
+                    >
+                        <div class="cities-profile-title">BUFFALO</div>
+                    </a>
+                    <a
+                        href="https://www.rochestermntours.com/"
+                        class="cities-profile-container"
+                        id="rochester-pic"
+                    >
+                        <div class="cities-profile-title">ROCHESTER</div>
+                    </a>
+                </div>
+                <div class="cities-profile-row">
+                    <a
+                        href="https://www.boston-discovery-guide.com/boston-tours.html"
+                        class="cities-profile-container cities-profile-container2"
+                        id="boston-pic"
+                    >
+                        <div class="cities-profile-title">BOSTON</div>
+                    </a>
+                    <a
+                        href="https://www.city-sightseeing.us/en"
+                        class="cities-profile-container cities-profile-container2"
+                        id="sanfran-pic"
+                    >
+                        <div class="cities-profile-title">SAN FRANCISCO</div>
+                    </a>
+                </div>
+            </div>
+            <div class="about-me">
+                <div>
+                    <div class="profile-picture"></div>
+                    <h3
+                        style="
+                            text-align: center;
+                            font-family: Verdana;
+                            font-weight: bold;
+                            position: relative;
+                            top: -10%;
+                        "
+                    >
+                        About me
+                    </h3>
+                </div>
+                <div class="profile-about">
+                    <p class="text2">
+                        My name is Rushui Fang, and I'm a Ph.D candidate in
+                        electrical and computer enigneering. Outside of school,
+                        I'm a passionate web developer. I love Binghamton and I
+                        hope you can learn more about this city from the data
+                        presented above.
+                    </p>
+                    <div class="flex-center">
+                        <a
+                            href="https://www.linkedin.com/in/rushuifang/"
+                            class="fa fa-linkedin fa-4x icon-3d"
+                        ></a>
+                        <a
+                            href="https://github.com/rushuifang"
+                            class="fa fa-github fa-4x icon-3d"
+                        ></a>
+                        <a
+                            href="https://scholar.google.com/citations?hl=en&user=8FKWXkYAAAAJ"
+                            class="fa fa-google fa-4x icon-3d"
+                        ></a>
+                        <a
+                            href="https://twitter.com/rushuifang"
+                            class="fa fa-twitter fa-4x icon-3d"
+                        ></a>
+                        <a
+                            href="https://www.facebook.com/rushuifang"
+                            class="fa fa-facebook fa-4x icon-3d"
+                        ></a>
+                        <a
+                            href="https://www.instagram.com/rushuifang/"
+                            class="fa fa-instagram fa-4x icon-3d"
+                        ></a>
+                    </div>
+                </div>
+                <div class="profile-quote">
+                    <blockquote>
+                        Without data you're just another person with an opinion.
+                    </blockquote>
+                    <p
+                        style="
+                            float: right;
+                            font-size: 1.5vh;
+                            font-weight: bold;
+                            font-family: cursive;
+                        "
+                    >
+                        —W. Edwards Deming
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="charts.js"></script>
+        <script src="page.js"></script>
+    </body>
+</html>
