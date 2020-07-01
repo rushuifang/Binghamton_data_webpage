@@ -1,5 +1,5 @@
 # Binghamton_data_webpage
-This is a front-end project of Binghamton data presentation. To run this website at your local end, simply download the folder, and then open dataAnalyse.html with live server in VScode. 
+This is a front-end project of Binghamton data presentation. To run this website at your local end, simply download the folder, and then open dataAnalyse.html with live server in VScode. You can also find it live at www.binghamtondata.com or www.binghamtondata.surge.sh.
 <br>
 Here's some screenshots:
 <br>
