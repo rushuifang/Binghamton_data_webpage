@@ -1,7 +1,5 @@
 .head {
     background-image: url("pictures/nature-preserve-fall.png");
-    height: 100vh;
-    width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,13 +13,13 @@
 }
 
 .head-text > h1 {
-    font-size: 3.5vw;
+    font-size: 5vw;
     font-family: "Franklin Gothic Medium";
     color: #daf4ed;
 }
 
 .head-text > p {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: "Franklin Gothic Medium";
     color: #daf4ed;
 }
@@ -42,14 +40,13 @@
 
 .stat-title > p {
     font-family: Trebuchet MS;
-    font-size: 0.8vw;
     color: #f3f9fb;
     margin: 0;
 }
 
 .stat-value > p {
     font-family: Charcoal;
-    font-size: 1.6vw;
+    font-size: 2.5vw;
     color: #f5fefb;
 }
 
@@ -81,6 +78,7 @@
     align-content: center;
     margin: 0 2vw;
     padding: 0 0.8vw;
+    text-align: center;
 }
 
 .nav-svg:hover {
@@ -89,15 +87,14 @@
 }
 
 .svg-logo {
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
     margin: 0 auto;
 }
 
 .nav-text {
     text-align: center;
     color: #f2fae1;
-    font-size: 0.55vw;
     font-family: "Times New Roman";
     margin: 0 auto;
 }
@@ -110,43 +107,20 @@
 #about {
     background-image: url("pictures/background-about.jpg");
     display: flex;
-    flex-direction: row;
-    height: 50vh;
     align-items: center;
     justify-content: center;
 }
 
-.about-svg {
-    width: 22vw;
-}
-
-.nys-svg {
-    width: 20vw;
-    height: 30vh;
-}
-
-.about-text {
-    width: 65vw;
-    margin: 1vh 1vw;
-}
-
 .about-text1 > h2 {
-    font-size: 1.2vw;
     font-family: cursive;
 }
 
 .about-text2 {
     color: #590f52;
-    column-count: 3;
     column-gap: 2vw;
-    font-size: 1.15vw;
     margin: 0 auto;
     font-family: "Times New Roman";
     text-align: justify;
-}
-
-#source {
-    font-size: 1vw;
 }
 
 #health,
@@ -171,26 +145,18 @@
 
 .text-chart-section {
     display: flex;
-    flex-direction: row;
     height: 50vh;
     width: 90vw;
+    text-align: center;
     justify-content: center;
 }
 
-.text-section {
-    width: 20vw;
-    height: 45vh;
-    margin: 2vh 0vw 2vh 2vw;
-}
-
 .text1 > h2 {
-    font-size: 1.2vw;
     font-family: cursive;
 }
 
 .text2 {
     color: #590f52;
-    font-size: 1.15vw;
     font-family: "Times New Roman";
     text-align: justify;
 }
@@ -210,7 +176,7 @@
 
 .enter-animation {
     animation-name: slide;
-    animation-duration: 2s;
+    animation-duration: 0.3s;
     visibility: visible !important;
 }
 
@@ -226,11 +192,8 @@
 }
 
 .chart-section {
-    width: 70vw;
-    height: 45vh;
     background-image: url("pictures/chart_background.jpeg");
     background-size: cover;
-    margin: 2vh 2vw 2vh 2vw;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -244,31 +207,24 @@
 .commute-subdiv {
     display: flex;
     flex-direction: row;
-    height: 30vh;
-    width: 90vw;
     align-items: center;
     justify-content: space-around;
 }
 
 .commute-text {
     height: 28vh;
-    width: 25vw;
     color: #590f52;
-    font-size: 1.15vw;
     font-family: "Times New Roman";
     text-align: justify;
-    margin: 2vh;
 }
 
 .commute-text > h2 {
-    font-size: 1.2vw;
     color: black !important;
     font-family: cursive;
 }
 
 .commute-picture {
     height: 28vh;
-    width: 25vw;
     background-repeat: no-repeat;
     background-size: cover;
     border: solid pink;
@@ -298,7 +254,6 @@
 
 .commute-map {
     height: 28vh;
-    width: 25vw;
 }
 
 .housing-row {
@@ -316,52 +271,43 @@
 
 .housing-text > h2 {
     font-family: cursive;
-    font-size: 1.2vw;
 }
 
 .housing-text > p {
     color: #590f52;
-    font-size: 1.15vw;
     font-family: "Times New Roman";
     text-align: justify;
 }
 
 .housing-bars {
-    height: 30vh;
-    width: 40vw;
-    margin: 2vh auto;
     background-image: url("pictures/chart_background.jpeg");
     background-size: cover;
 }
 
 .economy-table {
-    height: 38vh;
-    width: 52vw;
     border: 0.1vh solid black;
     margin: 2vh auto;
 }
 
 tr {
-    border: 0.1vh solid black;
+    border: 0.05vw solid black;
 }
 
 th,
 td {
-    padding: 1vh;
+    padding: 0.5vw;
     text-align: center;
     font-weight: bold;
 }
 
 thead {
     font-family: "Times New Roman";
-    font-size: 1.8vh;
     color: white;
     background-color: slateblue;
 }
 
 .table-column {
     font-family: Calibri;
-    font-size: 1.8vh;
     color: #281663;
 }
 
@@ -380,22 +326,18 @@ tbody:hover tr:hover td {
 
 .economy-row {
     display: flex;
-    flex-direction: row;
-    width: 90vw;
+    text-align: center;
 }
 
 .economy-texts {
-    width: 30vw;
     margin: 2vw;
     color: #590f52;
-    font-size: 1.15vw;
     font-family: "Times New Roman";
     text-align: justify;
 }
 
-.economy-charts {
-    width: 60vw;
-    height: 45vh;
+.economy-charts1,
+.economy-charts2 {
     margin: 2vh 2vw;
     display: flex;
     flex-direction: column;
@@ -404,9 +346,7 @@ tbody:hover tr:hover td {
 }
 
 .economy-text-source {
-    width: 55vw;
     font-family: fantasy;
-    font-size: 1vw;
     text-align: center;
     margin: 0 auto;
 }
@@ -415,7 +355,6 @@ tbody:hover tr:hover td {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 50vh;
     justify-content: space-around;
     background-image: url("pictures/background-about.jpg");
 }
@@ -424,7 +363,6 @@ tbody:hover tr:hover td {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 25vh;
     margin: 0 auto;
     align-items: center;
 }
@@ -454,7 +392,6 @@ tbody:hover tr:hover td {
 }
 
 .cities-profile-container {
-    height: 20vh;
     width: 22vw;
     border: grey solid;
     margin: 1vh auto;
@@ -465,7 +402,7 @@ tbody:hover tr:hover td {
 
 .cities-profile-container:hover {
     border: red solid !important;
-    animation: shake 0.5s;
+    animation: shake 0.1s;
 }
 
 @keyframes shake {
@@ -509,7 +446,7 @@ tbody:hover tr:hover td {
 }
 
 .cities-profile-title {
-    font-size: 3vh;
+    font-size: 2.1vw;
     font-family: Times;
     color: white;
     position: relative;
@@ -520,15 +457,12 @@ tbody:hover tr:hover td {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 20vh;
     justify-content: space-around;
     background-color: #faa005;
 }
 
 .profile-picture {
-    width: 15vh;
-    height: 15vh;
-    margin: 1vh 1vh 0 1vh;
+    margin: 1vh 1vw 0 1vw;
     border: solid lightblue;
     background-size: cover;
     background-image: url("pictures/pikachu.gif");
@@ -545,8 +479,6 @@ tbody:hover tr:hover td {
 }
 
 .flex-center {
-    width: 100%;
-    min-height: 6vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -565,7 +497,7 @@ tbody:hover tr:hover td {
 }
 
 .icon-3d {
-    padding: 10px;
+    padding: 0.5vw;
     -webkit-animation: icon3d 200ms 10;
     animation: icon3d 200ms 10;
     color: #fff;
@@ -604,13 +536,10 @@ tbody:hover tr:hover td {
 }
 
 blockquote {
-    font-size: 2vh;
     font-family: monospace;
     background: #f9f9f9;
     color: blue;
     border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
 }
 
@@ -624,4 +553,534 @@ blockquote:before {
 }
 blockquote p {
     display: inline;
+}
+@media (max-width: 700px) {
+    .head {
+        height: 30vh;
+        width: 100vw;
+    }
+    .stat-title > p {
+        font-size: 1.5vw;
+    }
+    .nav-text {
+        font-size: 1.5vw;
+    }
+    #about {
+        flex-direction: column;
+        height: 70vh;
+    }
+    .nys-svg {
+        width: 70vw;
+        height: 20vh;
+    }
+    .about-text {
+        width: 85vw;
+        margin: 0 1vw;
+    }
+    .about-text1 > h2 {
+        font-size: 2.4vw;
+    }
+    .about-text2 {
+        column-count: 1;
+        font-size: 2.3vw;
+    }
+    #source {
+        font-size: 2.1vw;
+    }
+    .text-chart-section {
+        flex-direction: column;
+    }
+    .text-section {
+        width: 80vw;
+        height: 20vh;
+        margin: 0 auto;
+    }
+    .text1 > h2 {
+        font-size: 2.4vw;
+    }
+    .text2 {
+        font-size: 2.3vw;
+    }
+    .chart-section {
+        width: 90vw;
+        height: 40vh;
+        margin: 0 auto 1vh;
+    }
+    #nys-population-chart {
+        height: 30vh;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    #health-bar1,
+    #health-bar2 {
+        height: 30vh;
+        width: 40vw;
+        margin: 0 auto;
+    }
+    #text-diversity2 {
+        transform: translateY(25%);
+    }
+    #bing-ethnicity-pie,
+    #bu-ethnicity-pie {
+        height: 30vh;
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .commute-subdiv {
+        height: 32vh;
+        width: 95vw;
+    }
+    .commute-text > h2 {
+        font-size: 2.4vw;
+    }
+    .commute-text {
+        font-size: 2.3vw;
+        margin: 1vh;
+        width: 30vw;
+    }
+    .commute-picture {
+        width: 30vw;
+    }
+    .commute-map {
+        width: 30vw;
+    }
+    .housing-text > h2 {
+        font-size: 2.4vw;
+        transform: translateY(-100%);
+    }
+    .housing-text > p {
+        font-size: 2.3vw;
+        transform: translateY(-10%);
+    }
+    .housing-bars {
+        height: 30vh;
+        width: 48vw;
+        margin: 0 auto;
+    }
+    #housing-bar-1,
+    #housing-bar-2,
+    #housing-bar-3,
+    #housing-bar-4,
+    #housing-bar-5 {
+        height: 29vh;
+        width: 47vw;
+        margin: 0.5vh 0.5vw;
+    }
+    .economy-texts > h2 {
+        text-align: center;
+        font-size: 2.4vw;
+    }
+    .economy-texts {
+        width: 90vw;
+        font-size: 2.3vw;
+    }
+    .economy-row {
+        flex-direction: column;
+    }
+    .economy-text-source {
+        width: 80vw;
+        font-size: 2vw;
+    }
+    .economy-table {
+        width: 90vw;
+    }
+    td {
+        font-size: 1.5vw;
+    }
+    th {
+        font-size: 2.3vw;
+    }
+    .table-column {
+        font-size: 2.1vw;
+    }
+    .economy-charts1,
+    .economy-charts2 {
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .economy-charts2 {
+        height: 35vh;
+    }
+    #economy-spline {
+        height: 30vh;
+        width: 85vw;
+        margin: auto;
+    }
+    .cities-profile div h3 {
+        font-size: 2.8vw;
+    }
+    .cities-profile-container {
+        height: 6vh;
+    }
+    .profile-picture {
+        width: 14vw;
+        height: 14vw;
+    }
+    .about-me div h3 {
+        font-size: 3vw;
+    }
+    .flex-center {
+        width: 200%;
+        min-height: 1.6vw;
+        transform: translateX(-15%);
+    }
+    .flex-center a {
+        font-size: 3vw;
+    }
+    blockquote {
+        font-size: 2vw;
+        margin: 0.5em 5px;
+        padding: 0.5em 5px;
+    }
+    .profile-quote > p {
+        font-size: 2vw;
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .head {
+        height: 40vh;
+        width: 100vw;
+    }
+    .stat-title > p {
+        font-size: 1.2vw;
+    }
+    .nav-text {
+        font-size: 1.2vw;
+    }
+    #about {
+        flex-direction: row;
+    }
+    .nys-svg {
+        width: 25vw;
+        height: 30vh;
+    }
+    .about-text {
+        width: 65vw;
+        margin: 0.5vh 1vw;
+    }
+    .about-text1 > h2 {
+        font-size: 1.55vw;
+    }
+    .about-text2 {
+        column-count: 2;
+        font-size: 1.5vw;
+    }
+    #source {
+        font-size: 1.4vw;
+    }
+    .text-chart-section {
+        flex-direction: row;
+    }
+    .text-section {
+        width: 20vw;
+        height: 45vh;
+        margin: 2vh 0vw 2vh 2vw;
+    }
+    .text1 > h2 {
+        font-size: 2vw;
+    }
+    .text2 {
+        font-size: 1.7vw;
+    }
+    .chart-section {
+        width: 67vw;
+        height: 36vh;
+        margin: 2vh 2vw 2vh 2vw;
+    }
+    #nys-population-chart {
+        height: 35vh;
+        width: 65vw;
+        margin: 0 auto;
+    }
+    #health-bar1,
+    #health-bar2 {
+        height: 35vh;
+        width: 30vw;
+        margin: 0 auto;
+    }
+    #bing-ethnicity-pie,
+    #bu-ethnicity-pie {
+        height: 35vh;
+        width: 65vw;
+        margin: 0 auto;
+    }
+    .commute-subdiv {
+        height: 32vh;
+        width: 95vw;
+    }
+    .commute-text > h2 {
+        font-size: 2vw;
+    }
+    .commute-text {
+        font-size: 1.7vw;
+        margin: 1.5vh;
+        width: 27vw;
+    }
+    .commute-picture {
+        width: 27vw;
+    }
+    .commute-map {
+        width: 27vw;
+    }
+    .housing-text > h2 {
+        font-size: 2vw;
+    }
+    .housing-text > p {
+        font-size: 1.7vw;
+    }
+    .housing-bars {
+        height: 30vh;
+        width: 40vw;
+        margin: 0 auto;
+    }
+    #housing-bar-1,
+    #housing-bar-2,
+    #housing-bar-3,
+    #housing-bar-4,
+    #housing-bar-5 {
+        height: 28vh;
+        width: 38vw;
+        margin: 1vh auto;
+    }
+    .economy-texts > h2 {
+        text-align: center;
+        font-size: 2vw;
+    }
+    .economy-texts {
+        width: 85vw;
+        font-size: 1.7vw;
+        margin: 0 auto;
+    }
+    .economy-row {
+        flex-direction: column;
+        width: 90vw;
+    }
+    .economy-text-source {
+        width: 80vw;
+        font-size: 1.5vw;
+    }
+    .economy-table {
+        width: 80vw;
+    }
+    td {
+        font-size: 1.4vw;
+    }
+    th {
+        font-size: 1.7vw;
+    }
+    .table-column {
+        font-size: 1.6vw;
+    }
+    .economy-charts1,
+    .economy-charts2 {
+        width: 85vw;
+    }
+    .economy-charts2 {
+        height: 35vh;
+    }
+    #economy-spline {
+        height: 30vh;
+        width: 80vw;
+        margin: auto;
+    }
+    .cities-profile div h3 {
+        font-size: 2.2vw;
+    }
+    .cities-profile-container {
+        height: 8vh;
+    }
+    .profile-picture {
+        width: 10vw;
+        height: 10vw;
+    }
+    .about-me div h3 {
+        font-size: 1.8vw;
+    }
+    .flex-center {
+        width: 200%;
+        min-height: 1.6vw;
+        transform: translateX(-10%);
+    }
+    .flex-center a {
+        font-size: 3vw;
+    }
+    blockquote {
+        font-size: 1.5vw;
+        margin: 0.5em 5px;
+        padding: 0.5em 5px;
+    }
+    .profile-quote > p {
+        font-size: 1.7vw;
+    }
+}
+@media (min-width: 1200px) {
+    .head {
+        height: 100vh;
+        width: 100vw;
+    }
+    .stat-title > p {
+        font-size: 0.9vw;
+    }
+    .nav-text {
+        font-size: 0.8vw;
+    }
+    #about {
+        flex-direction: row;
+        height: 50vh;
+    }
+    .about-svg {
+        width: 22vw;
+    }
+    .nys-svg {
+        width: 20vw;
+        height: 30vh;
+    }
+    .about-text {
+        width: 65vw;
+        margin: 1vh 1vw;
+    }
+    .about-text1 > h2 {
+        font-size: 1.2vw;
+    }
+    .about-text2 {
+        column-count: 3;
+        font-size: 1.15vw;
+    }
+    #source {
+        font-size: 1vw;
+    }
+    .text-chart-section {
+        flex-direction: row;
+    }
+    .text-section {
+        width: 20vw;
+        height: 45vh;
+        margin: 2vh 0vw 2vh 2vw;
+    }
+    .text1 > h2 {
+        font-size: 1.2vw;
+    }
+    .text2 {
+        font-size: 1.15vw;
+    }
+    .chart-section {
+        width: 70vw;
+        height: 45vh;
+        margin: 2vh 2vw 2vh 2vw;
+    }
+    #nys-population-chart {
+        height: 40vh;
+        width: 65vw;
+        margin: 0 auto;
+    }
+    #health-bar1,
+    #health-bar2 {
+        height: 40vh;
+        width: 30vw;
+        margin: 0 auto;
+    }
+    #bing-ethnicity-pie,
+    #bu-ethnicity-pie {
+        height: 40vh;
+        width: 65vw;
+        margin: 0 auto;
+    }
+    .commute-subdiv {
+        height: 30vh;
+        width: 90vw;
+    }
+    .commute-text > h2 {
+        font-size: 1.2vw;
+    }
+    .commute-text {
+        font-size: 1.15vw;
+        margin: 2vh;
+        width: 25vw;
+    }
+    .commute-picture {
+        width: 25vw;
+    }
+    .commute-map {
+        width: 25vw;
+    }
+    .housing-text > h2 {
+        font-size: 1.2vw;
+    }
+    .housing-text > p {
+        font-size: 1.15vw;
+    }
+    .housing-bars {
+        height: 30vh;
+        width: 40vw;
+        margin: 2vh auto;
+    }
+    #housing-bar-1,
+    #housing-bar-2,
+    #housing-bar-3,
+    #housing-bar-4,
+    #housing-bar-5 {
+        height: 26vh;
+        width: 38vw;
+        margin: 2vh auto;
+    }
+    .economy-texts > h2 {
+        font-size: 1.2vw;
+    }
+    .economy-texts {
+        width: 30vw;
+        font-size: 1.15vw;
+    }
+    .economy-row {
+        flex-direction: row;
+        width: 90vw;
+    }
+    .economy-text-source {
+        width: 55vw;
+        font-size: 1vw;
+    }
+    .economy-table {
+        width: 52vw;
+    }
+    td {
+        font-size: 0.8vw;
+    }
+    th {
+        font-size: 1vw;
+    }
+    .table-column {
+        font-size: 0.9vw;
+    }
+    .economy-charts1,
+    .economy-charts2 {
+        width: 60vw;
+    }
+    .economy-charts2 {
+        height: 45vh;
+    }
+    #economy-spline {
+        height: 38vh;
+        width: 52vw;
+        margin: auto;
+    }
+    .cities-profile div h3 {
+        font-size: 1.6vw;
+    }
+    .cities-profile-container {
+        height: 20vh;
+    }
+    .profile-picture {
+        width: 8vw;
+        height: 8vw;
+    }
+    .about-me div h3 {
+        font-size: 1.3vw;
+    }
+    blockquote {
+        font-size: 1.1vw;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+    }
+    .profile-quote > p {
+        font-size: 0.8vw;
+    }
 }
