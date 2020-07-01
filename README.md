@@ -3,9 +3,15 @@ This is a front-end project of Binghamton data presentation. To run this website
 <br>
 Here's some screenshots:
 <br>
-Home Page:
+Home Page at laptops:
 <br>
-![First screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/web_screenshot1.png)
+![Laptop screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_laptop.png)
+Home Page at iPads:
+<br>
+![Laptop screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_ipad.png)
+Home Page at iPhone6/7/8:
+<br>
+![Laptop screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_iphone6:7:8.png)
 <br>
 Population Data:
 <br>
