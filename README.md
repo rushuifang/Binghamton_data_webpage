@@ -5,13 +5,16 @@ Here's some screenshots:
 <br>
 Home Page at laptops:
 <br>
-![Laptop screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_laptop.png)
+<p align="center"><img  width="460" height="300" src="https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_laptop.png"> </P>
+<p align="center"><img src="https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_ipad.png"> </P>
+<br>
 Home Page at iPads:
 <br>
-![Laptop screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_ipad.png)
+![iPad screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_ipad.png)
+<br>
 Home Page at iPhone6/7/8:
 <br>
-![Laptop screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_iphone6:7:8.png)
+![iPhone screenshot:](https://github.com/rushuifang/Binghamton_data_webpage/blob/master/Bing_data/pictures/screenshot_iphone6:7:8.png)
 <br>
 Population Data:
 <br>
